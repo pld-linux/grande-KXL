@@ -27,7 +27,8 @@ rm -f missing
 aclocal
 %{__autoconf}
 %{__automake}
-%configure
+%configure \
+	--prefix=%{_datadir}
 %{__make}
 
 %install
@@ -44,5 +45,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README ChangeLog
 %attr(2755,root,games) %{_bindir}/grande
-%{_prefix}/games/grande
+%{_datadir}/games/grande
 %attr(664,root,games) %config(noreplace) %verify(not md5 size mtime) /var/games/grande.scores
