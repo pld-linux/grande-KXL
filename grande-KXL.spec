@@ -1,29 +1,28 @@
 Summary:	grande, a video-oriented game
 Summary(pl):	grande - gra video
 Name:		grande-KXL
-Version:	0.5
+Version:	0.6
 Release:	1
 License:	GPL
 Group:		Applications/Games
-Source0:	http://www2.mwnet.or.jp/~fc3srx7/download/%{name}-%{version}.tar.gz
-URL:		http://www2.mwnet.or.jp/~fc3srx7/
+Source0:	http://kxl.hn.org/download/%{name}-%{version}.tar.gz
+URL:		http://kxl.hn.org/games.php
+BuildRequires:	KXL-devel >= 1.1.5
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	KXL-devel >= 1.1.4
-Requires:	KXL >= 1.1.4
+Requires:	KXL >= 1.1.5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-2D horizon scroll shooting game.
+2D scroll shooting game.
 
 %description -l pl
-Strzelanka 2D z poziomym przewijaniem.
+Strzelanka 2D z pionowym przewijaniem.
 
 %prep
 %setup -q
 
 %build
-rm -f missing
 %{__aclocal}
 %{__autoconf}
 %{__automake}
