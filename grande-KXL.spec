@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Games
 Source0:	http://kxl.hn.org/download/%{name}-%{version}.tar.gz
+# Source0-md5:	a080baa2a154cd90e5da913206606c89
 URL:		http://kxl.hn.org/games.php
 BuildRequires:	KXL-devel >= 1.1.5
 BuildRequires:	autoconf
