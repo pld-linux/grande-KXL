@@ -46,4 +46,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc README ChangeLog
 %attr(2755,root,games) %{_bindir}/grande
 %{_datadir}/games/grande
-%attr(664,root,games) %config(noreplace) %verify(not md5 size mtime) /var/games/grande.scores
+%attr(664,root,games) %config(noreplace) %verify(not md5 mtime size) /var/games/grande.scores
