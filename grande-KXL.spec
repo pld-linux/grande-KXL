@@ -1,5 +1,5 @@
 Summary:	grande, a video-oriented game
-Summary(pl):	grande - gra video
+Summary(pl.UTF-8):   grande - gra video
 Name:		grande-KXL
 Version:	0.6
 Release:	1
@@ -17,7 +17,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 2D scroll shooting game.
 
-%description -l pl
+%description -l pl.UTF-8
 Strzelanka 2D z pionowym przewijaniem.
 
 %prep
