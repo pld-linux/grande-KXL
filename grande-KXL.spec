@@ -1,5 +1,5 @@
 Summary:	grande, a video-oriented game
-Summary(pl.UTF-8):   grande - gra video
+Summary(pl.UTF-8):	grande - gra video
 Name:		grande-KXL
 Version:	0.6
 Release:	1
